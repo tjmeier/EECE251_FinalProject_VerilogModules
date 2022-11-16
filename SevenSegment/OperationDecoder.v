@@ -16,10 +16,8 @@ wire X18, X88, X123, X160, X213, X237;
 
 assign opletter0[0] = 1'b1; //1111
 assign opletter1[0] = 1'b1;
-assign opletter3[0] = 1'b1;
+assign opletter3[2] = 1'b1;
 assign opletter3[3] = 1'b1;
-assign opletter3[4] = 1'b1;
-assign opletter3[5] = 1'b1;
 assign opletter3[6] = 1'b1;
 
 assign opletter0[3] = X18; //1000
@@ -43,8 +41,12 @@ assign opletter2[4] = X123;
 assign opletter0[5] = X160; //1100
 assign opletter1[5] = X160;
 
-assign opletter3[1] = X237; //1110
-assign opletter3[2] = X237;
+assign opletter3[0] = X237; //1110
+assign opletter3[1] = X237;
+assign opletter3[4] = X237;
+assign opletter3[5] = X237;
+
+
 
 
 mux #(8,1) U18 (

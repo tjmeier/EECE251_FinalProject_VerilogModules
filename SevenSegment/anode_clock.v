@@ -8,7 +8,8 @@ module anode_clock
 );
 
 //uses the clock signals to count through a 19 bit number and then loop back to zero after
-//the 2 most significant bits of the 19 bit number 'q' can be used effectively as a slowed-down clk
+//the 2 most significant bits of the 19 bit number 'q' can become a 2 bit counter to control the 
+//anodes at a proper proper clock pace
 
 wire [18:0]q;
 wire [18:0]d;
