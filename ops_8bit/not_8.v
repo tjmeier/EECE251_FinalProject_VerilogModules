@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module xor_8(
+module not_8(
     output [7:0] out,
 	input [7:0] in
 );
