@@ -2,12 +2,12 @@
 
 module NumberDecoder_upto8HexDigits
 (
-	input [31:0] binary_number //could be the 16-bit num1, num2, or the 32-bit answer
+	input [31:0] binary_number, //could be the 16-bit num1, num2, or the 32-bit answer
 	output [6:0] Hex_Digit0, Hex_Digit1, Hex_Digit2, Hex_Digit3,
 	Hex_Digit4, Hex_Digit5, Hex_Digit6, Hex_Digit7
 );
 
-wire [6:0] raw_digit0, raw_digit1, raw_digit2, raw_digit3
+wire [6:0] raw_digit0, raw_digit1, raw_digit2, raw_digit3,
 raw_digit4, raw_digit5, raw_digit6, raw_digit7;
 
 
@@ -18,54 +18,54 @@ raw_digit4, raw_digit5, raw_digit6, raw_digit7;
 FourBit_ToHex get_digit0(
 	.four_bit(binary_number[3:0]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit0 )
+	.Hex_Digit( raw_digit0  )
 );
 
 FourBit_ToHex get_digit1(
 	.four_bit(binary_number[7:4]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit1 )
+	.Hex_Digit( raw_digit1 )
 );
 
 FourBit_ToHex get_digit2(
 	.four_bit(binary_number[11:8]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit2 )
+	.Hex_Digit( raw_digit2 )
 );
 
 FourBit_ToHex get_digit3(
 	.four_bit(binary_number[15:12]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit3 )
+	.Hex_Digit( raw_digit3 )
 );
 
 FourBit_ToHex get_digit4(
 	.four_bit(binary_number[19:16]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit4 )
+	.Hex_Digit( raw_digit4 )
 );
 
 FourBit_ToHex get_digit5(
 	.four_bit(binary_number[23:20]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit5 )
+	.Hex_Digit( raw_digit5 )
 );
 
 FourBit_ToHex get_digit6(
 	.four_bit(binary_number[27:24]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit6 )
+	.Hex_Digit( raw_digit6 )
 );
 
 FourBit_ToHex get_digit7(
 	.four_bit(binary_number[31:28]),
 	.en( 1'b1 ),
-	.Hex_Digit( Hex_Digit7 )
+	.Hex_Digit( raw_digit7 )
 );
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-wire [6:0] is_value_behind_digit;  /*not to be confused with a 7-bit digit bus for the 7 segment display
+wire [6:0] is_value_behind;  /*not to be confused with a 7-bit digit bus for the 7 segment display
 is_value_behind[6] is 1 when there is a nonzero value behind the 6th
 digit and is 0 otherwise, same goes for [5], [4], [3], [2], [1], [0].
 
@@ -95,8 +95,6 @@ or (is_value_behind[0], is_value_behind[1], binary_number[7], binary_number[6], 
 
 //we don't care if the value AT digit 0 is a zero, we still would want to show that to the user
 
-wire not_is_value_behind[6:0];
-not_8 Inverting_is_value_behind (not_is_value_behind, is_value_behind);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -108,45 +106,52 @@ not_8 Inverting_is_value_behind (not_is_value_behind, is_value_behind);
 assign Hex_Digit0 = raw_digit0; //final digit 0 will match the raw_digit0
 
 mux4b #(7) set_final_digit1 (
-	.in0( raw_digit1 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[0] )
+	.in1( raw_digit1 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[0] ),
+	.out ( Hex_Digit1 )
 );
 
 mux4b #(7) set_final_digit2 (
-	.in0( raw_digit2 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[1] )
+	.in1( raw_digit2 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[1] ),
+	.out ( Hex_Digit2 )
 );
 
 mux4b #(7) set_final_digit3 (
-	.in0( raw_digit3 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[2] )
-)
+	.in1( raw_digit3 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[2] ),
+	.out ( Hex_Digit3 )
+);
 
 mux4b #(7) set_final_digit4 (
-	.in0( raw_digit4 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[3] )
+	.in1( raw_digit4 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[3] ),
+	.out ( Hex_Digit4 )
 );
 
 mux4b #(7) set_final_digit5 (
-	.in0( raw_digit5 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[4] )
+	.in1( raw_digit5 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[4] ),
+	.out ( Hex_Digit5 )
 );
 
 mux4b #(7) set_final_digit6 (
-	.in0( raw_digit6 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[5] )
+	.in1( raw_digit6 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[5] ),
+	.out ( Hex_Digit6 )
 );
 
 mux4b #(7) set_final_digit7 (
-	.in0( raw_digit7 ),
-	.in1( 7'b111_1111 ),
-	.sel( is_value_behind[6] )
+	.in1( raw_digit7 ),
+	.in0( 7'b111_1111 ),
+	.sel( is_value_behind[6] ),
+	.out ( Hex_Digit7 )
 );
 
 endmodule
