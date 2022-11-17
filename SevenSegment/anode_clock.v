@@ -7,114 +7,22 @@ module anode_clock
 
 );
 
-//uses the clock signals to count through a 19 bit number and then loop back to zero after
-//the 2 most significant bits of the 19 bit number 'q' can become a 2 bit counter to control the 
-//anodes at a proper proper clock pace
 
-wire [18:0]q;
-wire [18:0]d;
-wire [16:0]q_ands;
-
+// uses the system clock to count through a 19 bit number, reset to zero, and repeat
+// the most significant bits of q[18:0] can be used as an effectively slowed-down clk
+// q[18:17] cycles between 00 - 01 - 10 - 11 - 00, changing values every ~2.6 ms
 
 assign anode_clk0 = q[17];
 assign anode_clk1 = q[18];
 
 //18-bit register with bus d as next state and bus q as current state
 
-dff bit0 (
-	.data_out( q[0] ),
-	.in_D( d[0] ),
-	.in_CLK( clk )
-);
+wire [18:0]q, d;
 
-dff bit1 (
-	.data_out( q[1] ),
-	.in_D( d[1] ),
-	.in_CLK( clk )
-);
-
-dff bit2 (
-	.data_out( q[2] ),
-	.in_D( d[2] ),
-	.in_CLK( clk )
-);
-
-dff bit3 (
-	.data_out( q[3] ),
-	.in_D( d[3] ),
-	.in_CLK( clk )
-);
-
-dff bit4 (
-	.data_out( q[4] ),
-	.in_D( d[4] ),
-	.in_CLK( clk )
-);
-
-dff bit5 (
-	.data_out( q[5] ),
-	.in_D( d[5] ),
-	.in_CLK( clk )
-);
-
-dff bit6 (
-	.data_out( q[6] ),
-	.in_D( d[6] ),
-	.in_CLK( clk )
-);
-
-dff bit7 (
-	.data_out( q[7] ),
-	.in_D( d[7] ),
-	.in_CLK( clk )
-);
-
-dff bit8 (
-	.data_out( q[8] ),
-	.in_D( d[8] ),
-	.in_CLK( clk )
-);
-
-dff bit9 (
-	.data_out( q[9] ),
-	.in_D( d[9] ),
-	.in_CLK( clk )
-);
-
-dff bit10 (
-	.data_out( q[10] ),
-	.in_D( d[10] ),
-	.in_CLK( clk )
-);
-
-dff bit11 (
-	.data_out( q[11] ),
-	.in_D( d[11] ),
-	.in_CLK( clk )
-);
-
-dff bit12 (
-	.data_out( q[12] ),
-	.in_D( d[12] ),
-	.in_CLK( clk )
-);
-
-dff bit13 (
-	.data_out( q[13] ),
-	.in_D( d[13] ),
-	.in_CLK( clk )
-);
-
-dff bit14 (
-	.data_out( q[14] ),
-	.in_D( d[14] ),
-	.in_CLK( clk )
-);
-
-dff bit15 (
-	.data_out( q[15] ),
-	.in_D( d[15] ),
-	.in_CLK( clk )
+dff_16 bit0_to_15 (
+	.d_16 (d[15:0]),
+	.clk_in ( clk ),
+	.q_16 (q[15:0])
 );
 
 dff bit16 (
@@ -136,6 +44,8 @@ dff bit18 (
 );
 
 //Calculating the q_ands recursively
+wire [16:0]q_ands;
+
 and AND2(q_ands[0], q[1], q[0]);		//q1q0
 and AND3(q_ands[1], q[2], q_ands[0]);	//q2q1q0
 and AND4(q_ands[2], q[3], q_ands[1]);   //q3q2q1q0
