@@ -1,0 +1,418 @@
+
+*** Running vivado
+    with args -log AnswerSelector_FullTestSource.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AnswerSelector_FullTestSource.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source AnswerSelector_FullTestSource.tcl -notrace
+Command: synth_design -top AnswerSelector_FullTestSource -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3776
+WARNING: [Synth 8-6901] identifier 'q' is used before its declaration [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/anode_clock.v:15]
+WARNING: [Synth 8-6901] identifier 'q' is used before its declaration [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/anode_clock.v:16]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1618.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_FullTestSource' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/CalculatorSevenSegDisplay_testerSource.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CalculatorSevenSegDisplay' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'NumberDecoder_upto8HexDigits' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FourBit_ToHex' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/decoder.v:1]
+	Parameter NUM_SEL bound to: 4 - type: integer 
+	Parameter NUM_OUTPUT bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/decoder.v:1]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:14]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:24]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:35]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:46]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:57]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:68]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'FourBit_ToHex' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/FourBit_ToHex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4b' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+	Parameter k bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux4b' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:108]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:108]
+WARNING: [Synth 8-7023] instance 'set_final_digit1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:108]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:115]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:115]
+WARNING: [Synth 8-7023] instance 'set_final_digit2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:115]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:122]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:122]
+WARNING: [Synth 8-7023] instance 'set_final_digit3' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:122]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit4' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:129]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit4' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:129]
+WARNING: [Synth 8-7023] instance 'set_final_digit4' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:129]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit5' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:136]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit5' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:136]
+WARNING: [Synth 8-7023] instance 'set_final_digit5' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:136]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit6' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:143]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit6' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:143]
+WARNING: [Synth 8-7023] instance 'set_final_digit6' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:143]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit7' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:150]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit7' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:150]
+WARNING: [Synth 8-7023] instance 'set_final_digit7' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'NumberDecoder_upto8HexDigits' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/NumberDecoder_upto8HexDigits.v:3]
+WARNING: [Synth 8-7071] port 'Hex_Digit4' of module 'NumberDecoder_upto8HexDigits' is unconnected for instance 'get_switches_segs' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:21]
+WARNING: [Synth 8-7071] port 'Hex_Digit5' of module 'NumberDecoder_upto8HexDigits' is unconnected for instance 'get_switches_segs' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:21]
+WARNING: [Synth 8-7071] port 'Hex_Digit6' of module 'NumberDecoder_upto8HexDigits' is unconnected for instance 'get_switches_segs' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:21]
+WARNING: [Synth 8-7071] port 'Hex_Digit7' of module 'NumberDecoder_upto8HexDigits' is unconnected for instance 'get_switches_segs' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:21]
+WARNING: [Synth 8-7023] instance 'get_switches_segs' of module 'NumberDecoder_upto8HexDigits' has 9 connections declared, but only 5 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:21]
+INFO: [Synth 8-6157] synthesizing module 'OperationDecoder' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/OperationDecoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux.v:1]
+	Parameter NUM_INPUTS bound to: 8 - type: integer 
+	Parameter NUM_OUTPUTS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OperationDecoder' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/OperationDecoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AnswerDecoder' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerDecoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_getCode' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/debouncer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/debouncer.v:3]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:15]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:15]
+WARNING: [Synth 8-7023] instance 'debouncer1' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:15]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:21]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:21]
+WARNING: [Synth 8-7023] instance 'debouncer2' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:21]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:27]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:27]
+WARNING: [Synth 8-7023] instance 'debouncer3' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:27]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/dff.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/dff.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_getCode' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_getCode.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_LEDvisualizer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_LEDvisualizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4b__parameterized0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+	Parameter k bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux4b__parameterized0' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'led_active_digits_display2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_LEDvisualizer.v:21]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'led_active_digits_display2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_LEDvisualizer.v:21]
+WARNING: [Synth 8-7023] instance 'led_active_digits_display2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_LEDvisualizer.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_LEDvisualizer' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_LEDvisualizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_4digitsToOutput' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:3]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:43]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:43]
+WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput0' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:43]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:60]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:60]
+WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:60]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:77]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:77]
+WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:77]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:94]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:94]
+WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput3' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_4digitsToOutput' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerSelector_4digitsToOutput.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AnswerDecoder' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/AnswerDecoder.v:3]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_OUT_Led_Visualizer_Answer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_OUT_Led_Visualizer_Answer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
+WARNING: [Synth 8-7023] instance 'set_OUT_Led_Visualizer_Answer' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
+INFO: [Synth 8-6157] synthesizing module 'SevenSeg_4digitDriver' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/SevenSeg_4digitDriver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'anode_clock' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/anode_clock.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dff_16' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_8bit/dff_16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dff_16' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_8bit/dff_16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'anode_clock' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/anode_clock.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSeg_4digitDriver' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/SevenSegment/SevenSeg_4digitDriver.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CalculatorSevenSegDisplay' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CalculatorStageSelector' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:3]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
+WARNING: [Synth 8-7023] instance 'debouncer1' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
+WARNING: [Synth 8-7023] instance 'debouncer2' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'CalculatorStageSelector' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_FullTestSource' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/CalculatorSevenSegDisplay_testerSource.v:3]
+WARNING: [Synth 8-7129] Port led[12] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module AnswerSelector_FullTestSource is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1618.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1618.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1618.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1618.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/FinalProject_Constraints.xdc]
+Finished Parsing XDC File [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/FinalProject_Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/FinalProject_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AnswerSelector_FullTestSource_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AnswerSelector_FullTestSource_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1684.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U42'
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U60'
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U78'
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U96'
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U114'
+INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U148'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 22    
++---Registers : 
+	                1 Bit    Registers := 39    
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 3     
+	   4 Input    7 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led[12] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module AnswerSelector_FullTestSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module AnswerSelector_FullTestSource is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    11|
+|4     |LUT2   |    20|
+|5     |LUT3   |     6|
+|6     |LUT4   |    34|
+|7     |LUT5   |    32|
+|8     |LUT6   |    62|
+|9     |FDRE   |   119|
+|10    |IBUF   |    22|
+|11    |OBUF   |    22|
+|12    |OBUFT  |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1684.863 ; gain = 65.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1684.863 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 1684.863 ; gain = 65.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1687.180 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a1db1a75
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 150 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 1690.820 ; gain = 71.910
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/AnswerSelector_FullTestSource.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AnswerSelector_FullTestSource_utilization_synth.rpt -pb AnswerSelector_FullTestSource_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 18:32:20 2022...
