@@ -11,7 +11,7 @@ module AnswerDecoder(
     wire [6:0]hex0, hex1, hex2, hex3, hex4, hex5, hex6, hex7, outhex0, outhex1, outhex2, outhex3;
     //wires to transfer seven segment display hex values across modules
         
-    NumberDecoder_upto8HexDigits get_num1_segs(
+    NumberDecoder_upto8HexDigits get_answer_segs(
         .binary_number( IN_binary_answer ),
         .Hex_Digit0  (hex0),
         .Hex_Digit1  (hex1),
