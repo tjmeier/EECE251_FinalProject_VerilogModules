@@ -14,10 +14,11 @@ module Multiplier_testerSource (
     
     wire [31:0] product;
     
-    Multiplier_16 multiply (
+    Subtractor_16 subtract (
         .A_in16( num1 ),
         .B_in16( num2 ),
-        .Product_out32 ( product )
+        .Diff_out16 ( product ),
+        .Carry_out( led[12] )
     );
     
     CalculatorSevenSegDisplay (
@@ -69,8 +70,4 @@ module Multiplier_testerSource (
     assign led[14] = store_num2;
     assign led[13] = store_opcode;
     
-    //just for testing!
-    assign led[11] = opcode[2];
-    assign led[10] = opcode[1];
-    assign led[9] = opcode[0];
 endmodule

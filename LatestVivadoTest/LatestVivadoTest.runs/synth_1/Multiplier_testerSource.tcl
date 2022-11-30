@@ -87,9 +87,6 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_16.v
-  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_32.v
-  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_4.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerDecoder.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v
@@ -98,12 +95,13 @@ read_verilog -library xil_defaultlib {
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/FourBit_ToHex.v
-  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/NumberDecoder_upto8HexDigits.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/OperationDecoder.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/SevenSeg_4digitDriver.v
+  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtraction_4.v
+  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/anode_clock.v
-  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitAdder.v
+  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitsubtractor.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/debouncer.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/decoder.v
   C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/dff.v

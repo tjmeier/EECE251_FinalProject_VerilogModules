@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Nov 30 15:07:27 2022
-# Process ID: 21232
+# Start of session at: Wed Nov 30 15:19:43 2022
+# Process ID: 10324
 # Current directory: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1
 # Command line: vivado.exe -log Multiplier_testerSource.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Multiplier_testerSource.tcl
 # Log file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/Multiplier_testerSource.vds
@@ -19,155 +19,26 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16928
+INFO: [Synth 8-7075] Helper process launched with PID 5780
 WARNING: [Synth 8-6901] identifier 'q' is used before its declaration [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/anode_clock.v:15]
 WARNING: [Synth 8-6901] identifier 'q' is used before its declaration [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/anode_clock.v:16]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1667.582 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1666.848 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Multiplier_testerSource' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Multiplier_16' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:3]
-INFO: [Synth 8-6157] synthesizing module 'mux4b' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
-	Parameter k bound to: 8 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'mux4b' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend0part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:21]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend0part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:21]
-WARNING: [Synth 8-7023] instance 'addend0part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:21]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend0part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:28]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend0part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:28]
-WARNING: [Synth 8-7023] instance 'addend0part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:28]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend1part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:38]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend1part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:38]
-WARNING: [Synth 8-7023] instance 'addend1part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:38]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend1part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:45]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend1part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:45]
-WARNING: [Synth 8-7023] instance 'addend1part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:45]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend2part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:55]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend2part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:55]
-WARNING: [Synth 8-7023] instance 'addend2part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:55]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend2part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:62]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend2part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:62]
-WARNING: [Synth 8-7023] instance 'addend2part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:62]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend3part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:72]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend3part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:72]
-WARNING: [Synth 8-7023] instance 'addend3part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:72]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend3part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:79]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend3part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:79]
-WARNING: [Synth 8-7023] instance 'addend3part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:79]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend4part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:89]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend4part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:89]
-WARNING: [Synth 8-7023] instance 'addend4part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:89]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend4part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:96]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend4part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:96]
-WARNING: [Synth 8-7023] instance 'addend4part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:96]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend5part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:106]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend5part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:106]
-WARNING: [Synth 8-7023] instance 'addend5part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:106]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend5part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:113]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend5part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:113]
-WARNING: [Synth 8-7023] instance 'addend5part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:113]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend6part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:123]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend6part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:123]
-WARNING: [Synth 8-7023] instance 'addend6part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:123]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend6part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:130]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend6part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:130]
-WARNING: [Synth 8-7023] instance 'addend6part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:130]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend7part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:140]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend7part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:140]
-WARNING: [Synth 8-7023] instance 'addend7part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:140]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend7part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:147]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend7part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:147]
-WARNING: [Synth 8-7023] instance 'addend7part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:147]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend8part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:157]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend8part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:157]
-WARNING: [Synth 8-7023] instance 'addend8part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:157]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend8part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:164]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend8part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:164]
-WARNING: [Synth 8-7023] instance 'addend8part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:164]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend9part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:174]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend9part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:174]
-WARNING: [Synth 8-7023] instance 'addend9part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:174]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend9part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:181]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend9part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:181]
-WARNING: [Synth 8-7023] instance 'addend9part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:181]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend10part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:191]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend10part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:191]
-WARNING: [Synth 8-7023] instance 'addend10part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:191]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend10part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:198]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend10part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:198]
-WARNING: [Synth 8-7023] instance 'addend10part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:198]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend11part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:208]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend11part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:208]
-WARNING: [Synth 8-7023] instance 'addend11part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:208]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend11part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:215]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend11part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:215]
-WARNING: [Synth 8-7023] instance 'addend11part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:215]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend12part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:225]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend12part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:225]
-WARNING: [Synth 8-7023] instance 'addend12part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:225]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend12part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:232]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend12part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:232]
-WARNING: [Synth 8-7023] instance 'addend12part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:232]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend13part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:242]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend13part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:242]
-WARNING: [Synth 8-7023] instance 'addend13part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:242]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend13part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:249]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend13part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:249]
-WARNING: [Synth 8-7023] instance 'addend13part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:249]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend14part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:259]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend14part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:259]
-WARNING: [Synth 8-7023] instance 'addend14part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:259]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend14part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:266]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend14part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:266]
-WARNING: [Synth 8-7023] instance 'addend14part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:266]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend15part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:276]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend15part1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:276]
-WARNING: [Synth 8-7023] instance 'addend15part1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:276]
-WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'addend15part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:283]
-WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'addend15part2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:283]
-WARNING: [Synth 8-7023] instance 'addend15part2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:283]
-INFO: [Synth 8-6157] synthesizing module 'Adder_32' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_32.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Adder_16' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_16.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Adder_4' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_4.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bitAdder' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitAdder.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'bitAdder' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitAdder.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Adder_4' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_4.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Adder_16' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_16.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Adder_32' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Adder_32.v:3]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend0_plus_addend1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:295]
-WARNING: [Synth 8-7023] instance 'addend0_plus_addend1' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:295]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend2_plus_addend3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:303]
-WARNING: [Synth 8-7023] instance 'addend2_plus_addend3' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:303]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend4_plus_addend5' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:311]
-WARNING: [Synth 8-7023] instance 'addend4_plus_addend5' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:311]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend6_plus_addend7' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:318]
-WARNING: [Synth 8-7023] instance 'addend6_plus_addend7' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:318]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend8_plus_addend9' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:326]
-WARNING: [Synth 8-7023] instance 'addend8_plus_addend9' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:326]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend10_plus_addend11' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:334]
-WARNING: [Synth 8-7023] instance 'addend10_plus_addend11' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:334]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend12_plus_addend13' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:342]
-WARNING: [Synth 8-7023] instance 'addend12_plus_addend13' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:342]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'addend14_plus_addend15' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:350]
-WARNING: [Synth 8-7023] instance 'addend14_plus_addend15' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:350]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total0_plus_total1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:360]
-WARNING: [Synth 8-7023] instance 'total0_plus_total1' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:360]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total2_plus_total3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:368]
-WARNING: [Synth 8-7023] instance 'total2_plus_total3' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:368]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total4_plus_total5' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:376]
-WARNING: [Synth 8-7023] instance 'total4_plus_total5' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:376]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total6_plus_total7' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:384]
-WARNING: [Synth 8-7023] instance 'total6_plus_total7' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:384]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total8_plus_total9' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:394]
-WARNING: [Synth 8-7023] instance 'total8_plus_total9' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:394]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total10_plus_total11' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:402]
-WARNING: [Synth 8-7023] instance 'total10_plus_total11' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:402]
-WARNING: [Synth 8-7071] port 'Carry_out' of module 'Adder_32' is unconnected for instance 'total12_plus_total13' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:412]
-WARNING: [Synth 8-7023] instance 'total12_plus_total13' of module 'Adder_32' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:412]
-INFO: [Synth 8-6155] done synthesizing module 'Multiplier_16' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Multiplier_16.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Subtractor_16' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Subtractor_4' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtraction_4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bitSubtractor' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitsubtractor.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bitSubtractor' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/bitsubtractor.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Subtractor_4' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtraction_4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Subtractor_16' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'Diff_out16' does not match port width (16) of module 'Subtractor_16' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v:20]
+WARNING: [Synth 8-7071] port 'Carry_in' of module 'Subtractor_16' is unconnected for instance 'subtract' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v:17]
+WARNING: [Synth 8-7023] instance 'subtract' of module 'Subtractor_16' has 5 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v:17]
 INFO: [Synth 8-6157] synthesizing module 'CalculatorSevenSegDisplay' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:3]
 INFO: [Synth 8-6157] synthesizing module 'NumberDecoder_upto8HexDigits' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/NumberDecoder_upto8HexDigits.v:3]
 INFO: [Synth 8-6157] synthesizing module 'FourBit_ToHex' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/FourBit_ToHex.v:3]
@@ -254,10 +125,10 @@ WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C
 WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/FourBit_ToHex.v:79]
 WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/FourBit_ToHex.v:79]
 INFO: [Synth 8-6155] done synthesizing module 'FourBit_ToHex' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/FourBit_ToHex.v:3]
-INFO: [Synth 8-6157] synthesizing module 'mux4b__parameterized0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4b' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
 	Parameter k bound to: 7 - type: integer 
 INFO: [Synth 8-226] default block is never used [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'mux4b__parameterized0' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux4b' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
 WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_final_digit1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/NumberDecoder_upto8HexDigits.v:108]
 WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_final_digit1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/NumberDecoder_upto8HexDigits.v:108]
 WARNING: [Synth 8-7023] instance 'set_final_digit1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/NumberDecoder_upto8HexDigits.v:108]
@@ -299,22 +170,40 @@ WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for
 WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:15]
 WARNING: [Synth 8-7023] instance 'debouncer1' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:15]
 WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:21]
-INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:21]
 WARNING: [Synth 8-7023] instance 'debouncer2' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:21]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:27]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:27]
 WARNING: [Synth 8-7023] instance 'debouncer3' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:27]
 INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/dff.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'dff' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/dff.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_getCode' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_getCode.v:3]
 INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_LEDvisualizer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4b__parameterized0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+	Parameter k bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux4b__parameterized0' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_EECE251_provided/mux4b.v:1]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'led_active_digits_display2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v:21]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'led_active_digits_display2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v:21]
 WARNING: [Synth 8-7023] instance 'led_active_digits_display2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_LEDvisualizer' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_LEDvisualizer.v:3]
 INFO: [Synth 8-6157] synthesizing module 'AnswerSelector_4digitsToOutput' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:3]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:43]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput0' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:43]
 WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput0' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:43]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:60]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:60]
 WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput1' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:60]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:77]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:77]
 WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput2' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:77]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:94]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'second_getAnswerDigitToOutput3' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:94]
 WARNING: [Synth 8-7023] instance 'second_getAnswerDigitToOutput3' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:94]
 INFO: [Synth 8-6155] done synthesizing module 'AnswerSelector_4digitsToOutput' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerSelector_4digitsToOutput.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'AnswerDecoder' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/AnswerDecoder.v:3]
+WARNING: [Synth 8-7071] port 'in3' of module 'mux4b' is unconnected for instance 'set_OUT_Led_Visualizer_Answer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
+WARNING: [Synth 8-7071] port 'in2' of module 'mux4b' is unconnected for instance 'set_OUT_Led_Visualizer_Answer' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
 WARNING: [Synth 8-7023] instance 'set_OUT_Led_Visualizer_Answer' of module 'mux4b' has 6 connections declared, but only 4 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:64]
 INFO: [Synth 8-6157] synthesizing module 'SevenSeg_4digitDriver' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/SevenSeg_4digitDriver.v:3]
 INFO: [Synth 8-6157] synthesizing module 'anode_clock' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/anode_clock.v:3]
@@ -324,27 +213,33 @@ INFO: [Synth 8-6155] done synthesizing module 'anode_clock' (0#1) [C:/Users/tyle
 INFO: [Synth 8-6155] done synthesizing module 'SevenSeg_4digitDriver' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSeg_dependencies/SevenSeg_4digitDriver.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'CalculatorSevenSegDisplay' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSevenSegDisplay.v:3]
 INFO: [Synth 8-6157] synthesizing module 'CalculatorStageSelector' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:3]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer1' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
 WARNING: [Synth 8-7023] instance 'debouncer1' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:14]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
+WARNING: [Synth 8-7071] port 'PB_down' of module 'debouncer' is unconnected for instance 'debouncer2' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
 WARNING: [Synth 8-7023] instance 'debouncer2' of module 'debouncer' has 5 connections declared, but only 3 given [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'CalculatorStageSelector' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorStageSelector.v:3]
 INFO: [Synth 8-6157] synthesizing module 'CalculatorDataCollector' [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorDataCollector.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'CalculatorDataCollector' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorDataCollector.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Multiplier_testerSource' (0#1) [C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v:3]
-WARNING: [Synth 8-7129] Port led[12] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module Multiplier_testerSource is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[8] in module Multiplier_testerSource is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.582 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1666.848 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.582 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1666.848 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.582 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1666.848 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1667.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1666.848 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -355,39 +250,31 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Multiplier_testerSource_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1673.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1680.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1673.539 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1680.453 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1673.539 ; gain = 5.957
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1673.539 ; gain = 5.957
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U42'
 INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U60'
@@ -395,27 +282,17 @@ INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit
 INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U96'
 INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U114'
 INFO: [Synth 8-223] decloning instance 'FourBit_ToHex:/U6' (decoder) to 'FourBit_ToHex:/U148'
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---XORs : 
-	   3 Input      1 Bit         XORs := 480   
+	   3 Input      1 Bit         XORs := 16    
 	   2 Input      1 Bit         XORs := 22    
 +---Registers : 
 	                1 Bit    Registers := 74    
 +---Muxes : 
-	   4 Input    8 Bit        Muxes := 35    
+	   4 Input    8 Bit        Muxes := 3     
 	   4 Input    7 Bit        Muxes := 27    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -433,28 +310,30 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port led[12] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module Multiplier_testerSource is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module Multiplier_testerSource is either unconnected or has no load
 WARNING: [Synth 8-7129] Port led[8] in module Multiplier_testerSource is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1673.539 ; gain = 5.957
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1680.453 ; gain = 13.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 1692.977 ; gain = 25.395
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1733.902 ; gain = 66.320
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -472,37 +351,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -521,38 +400,37 @@ Report Cell Usage:
 |1     |BUFG   |     2|
 |2     |CARRY4 |    20|
 |3     |LUT1   |    11|
-|4     |LUT2   |    28|
-|5     |LUT3   |    66|
-|6     |LUT4   |    63|
-|7     |LUT5   |   204|
-|8     |LUT6   |   324|
-|9     |FDRE   |   154|
+|4     |LUT2   |    22|
+|5     |LUT3   |    12|
+|6     |LUT4   |    29|
+|7     |LUT5   |    64|
+|8     |LUT6   |   113|
+|9     |FDRE   |   151|
 |10    |IBUF   |    22|
-|11    |OBUF   |    25|
-|12    |OBUFT  |     2|
+|11    |OBUF   |    23|
+|12    |OBUFT  |     4|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1748.699 ; gain = 75.160
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1748.699 ; gain = 81.117
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1732.359 ; gain = 51.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1732.359 ; gain = 65.512
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1760.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1732.359 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1764.434 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1732.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 302e7f53
+Synth Design complete, checksum: 9a185f04
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 251 Warnings, 1 Critical Warnings and 0 Errors encountered.
+75 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1764.434 ; gain = 96.852
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1732.359 ; gain = 65.512
 INFO: [Common 17-1381] The checkpoint 'C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/Multiplier_testerSource.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Multiplier_testerSource_utilization_synth.rpt -pb Multiplier_testerSource_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 15:08:17 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 15:20:26 2022...
