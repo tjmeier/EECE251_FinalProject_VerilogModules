@@ -1,4 +1,4 @@
-module Subtraction_txt(
+module bitSubtractor(
 	input A_in,
 	input B_in,
 	input Carry_in,
