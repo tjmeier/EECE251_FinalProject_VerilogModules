@@ -1,0 +1,63 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Nov 30 15:08:50 2022
+| Host         : Tyler_Thinkpad running 64-bit major release  (build 9200)
+| Command      : report_drc -file Multiplier_testerSource_drc_opted.rpt -pb Multiplier_testerSource_drc_opted.pb -rpx Multiplier_testerSource_drc_opted.rpx
+| Design       : Multiplier_testerSource
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT nolabel_line42/U3/led_OBUF[13]_inst_i_1 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
+nolabel_line55/opcode0/data_out_reg, nolabel_line55/opcode1/data_out_reg
+nolabel_line55/opcode2/data_out_reg
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT nolabel_line42/U3/led_OBUF[15]_inst_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+nolabel_line55/num1/bit0/data_out_reg,
+nolabel_line55/num1/bit1/data_out_reg,
+nolabel_line55/num1/bit10/data_out_reg,
+nolabel_line55/num1/bit11/data_out_reg,
+nolabel_line55/num1/bit12/data_out_reg,
+nolabel_line55/num1/bit13/data_out_reg,
+nolabel_line55/num1/bit14/data_out_reg,
+nolabel_line55/num1/bit15/data_out_reg,
+nolabel_line55/num1/bit2/data_out_reg,
+nolabel_line55/num1/bit3/data_out_reg,
+nolabel_line55/num1/bit4/data_out_reg,
+nolabel_line55/num1/bit5/data_out_reg,
+nolabel_line55/num1/bit6/data_out_reg,
+nolabel_line55/num1/bit7/data_out_reg,
+nolabel_line55/num1/bit8/data_out_reg (the first 15 of 16 listed)
+Related violations: <none>
+
+

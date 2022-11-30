@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Nov 30 15:02:08 2022
-# Process ID: 18096
+# Start of session at: Wed Nov 30 15:08:25 2022
+# Process ID: 21632
 # Current directory: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1
-# Command line: vivado.exe -log AnswerSelector_FullTestSource.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AnswerSelector_FullTestSource.tcl -notrace
-# Log file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/AnswerSelector_FullTestSource.vdi
+# Command line: vivado.exe -log Multiplier_testerSource.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Multiplier_testerSource.tcl -notrace
+# Log file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/Multiplier_testerSource.vdi
 # Journal file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1\vivado.jou
 # Running On: Tyler_Thinkpad, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 14, Host memory: 16830 MB
 #-----------------------------------------------------------
-source AnswerSelector_FullTestSource.tcl -notrace
+source Multiplier_testerSource.tcl -notrace
