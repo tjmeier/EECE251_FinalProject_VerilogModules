@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps 
 
-module Multiplier_testerSource (
+module Subtraction_testerSource (
     input btnU, btnD, btnC, btnL, btnR, clk,
     input [15:0] sw,
     output [15:0]led,
