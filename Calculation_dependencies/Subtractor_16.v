@@ -47,3 +47,5 @@ Subtractor_4 sub_bit12to15 (
 	.Diff_out4( Diff_out16[15:12] ),
 	.Carry_out( Carry_out )
 );
+
+endmodule
