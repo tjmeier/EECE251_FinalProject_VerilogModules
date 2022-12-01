@@ -22,11 +22,15 @@ Adder_16 add (
     .Carry_in( 1'b0 ),
     .Sum_out16( addition_answer[15:0] ),
     .Carry_out( addition_answer[16] ) //any extra carry is should be added to the end of the sum
-)
+);
 
-Subtractor subtract (
-    //tbd
-)
+Subtractor_16_with_negatives subtract (
+    .A_in16( IN_num1 ),
+    .B_in16( IN_num2 ),
+    .Carry_in( 1'b0 ),
+    .Diff_out16( subtraction_answer ),
+    .Is_negative_out( OUT_is_negative )
+);
 
 
 
