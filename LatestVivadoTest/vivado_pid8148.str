@@ -1,0 +1,1153 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 8148
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Nov 30 20:13:08 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 2560x1600
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	tyler
+User home directory: C:/Users/tyler
+User working directory: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/tyler/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/tyler/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/tyler/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/vivado.log
+Vivado journal file: 	C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/vivado.jou
+Engine tmp dir: 	C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/.Xil/Vivado-8148-Tyler_Thinkpad
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	319 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,479 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 104 MB (+106226kb) [00:00:14]
+// [Engine Memory]: 1,479 MB (+1399540kb) [00:00:14]
+// Opening Vivado Project: C:\Users\tyler\Documents\GitHub\EECE251_FinalProject_VerilogModules\LatestVivadoTest\LatestVivadoTest.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,479 MB. GUI used memory: 71 MB. Current time: 11/30/22, 8:13:09 PM EST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest' 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 118 MB (+9963kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  3709 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 133 MB (+9211kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1673.555 ; gain = 0.000 
+// Project name: LatestVivadoTest; location: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bA
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Subtraction_4.v]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtraction_4.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtraction_4.v 
+// [GUI Memory]: 142 MB (+2601kb) [00:00:40]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Subtractor_16.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Subtractor_16.v]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16.v] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (Multiplier_testerSource.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 11 seconds
+String[] filenames31467 = {"C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16_with_negatives.v", "C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_4.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_4.v C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/Calculation_dependencies/Subtractor_16_with_negatives.v} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 14 seconds
+setFileChooser("C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorCalculation.v");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorCalculation.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 155 MB (+6180kb) [00:01:50]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (Multiplier_testerSource.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (Multiplier_testerSource.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (Multiplier_testerSource.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1163 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("Multiplier_testerSource.v", 73, 62); // be
+selectCodeEditor("Multiplier_testerSource.v", 317, 196); // be
+// Elapsed time: 27 seconds
+selectCodeEditor("Multiplier_testerSource.v", 108, 57); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (Multiplier_testerSource.v)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'c' command handler elapsed time: 8 seconds
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/VivadoTestSources/Multiplier_testerSource.v 
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSource.v");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/CalculatorSource.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (CalculatorSource.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Subtraction_testerSource (CalculatorSource.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1107 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("CalculatorSource.v", 325, 67); // be
+selectCodeEditor("CalculatorSource.v", 340, 67); // be
+selectCodeEditor("CalculatorSource.v", 235, 407); // be
+selectCodeEditor("CalculatorSource.v", 96, 542); // be
+selectCodeEditor("CalculatorSource.v", 393, 512); // be
+selectCodeEditor("CalculatorSource.v", 68, 570); // be
+selectCodeEditor("CalculatorSource.v", 68, 570, false, false, false, false, true); // be - Double Click
+selectCodeEditor("CalculatorSource.v", 286, 566); // be
+selectCodeEditor("CalculatorSource.v", 308, 555); // be
+// Elapsed time: 135 seconds
+selectCodeEditor("CalculatorSource.v", 293, 372); // be
+selectCodeEditor("CalculatorSource.v", 208, 364); // be
+selectCodeEditor("CalculatorSource.v", 208, 364, false, false, false, false, true); // be - Double Click
+selectCodeEditor("CalculatorSource.v", 261, 528); // be
+selectCodeEditor("CalculatorSource.v", 265, 516); // be
+selectCodeEditor("CalculatorSource.v", 265, 516, false, false, false, false, true); // be - Double Click
+selectCodeEditor("CalculatorSource.v", 232, 319); // be
+selectCodeEditor("CalculatorSource.v", 283, 491); // be
+selectCodeEditor("CalculatorSource.v", 363, 626); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v)]", 8); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v)]", 1); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_8bit/not_8.v");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/ops_8bit/not_8.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v)]", 8); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v)]", 8); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/Multiplier_testerSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:20:57 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:20:57 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), sub_bit12to15 : Subtractor_4 (Subtractor_4.v)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1048 ms.
+// [GUI Memory]: 164 MB (+856kb) [00:08:48]
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("Subtractor_16_with_negatives.v", 92, 434); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 49, 473); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 98, 463); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 612, 532); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Subtractor_16_with_negatives.v", 452, 306); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:22:01 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:22:01 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 66 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 521, 277); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 305, 506); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a
+// 'eq' command handler elapsed time: 3 seconds
+dismissDialog("Save Project"); // al
+selectCodeEditor("Subtractor_16_with_negatives.v", 427, 528); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 417, 514); // be
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Subtractor_16_with_negatives.v", 332, 304); // be
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1673.555 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3933 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312E8A 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,544 MB. GUI used memory: 96 MB. Current time: 11/30/22, 8:24:36 PM EST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 3,547 MB (+2090300kb) [00:11:46]
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "Not programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 179 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+// Elapsed time: 32 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 205, 606); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 441, 386); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectCodeEditor("CalculatorSource.v", 369, 538); // be
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,571 MB. GUI used memory: 99 MB. Current time: 11/30/22, 8:28:49 PM EST
+selectCodeEditor("CalculatorSource.v", 327, 201); // be
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), sub_bit4to7 : Subtractor_4 (Subtractor_4.v)]", 10, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+dismissDialog("Opening Editor"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 1); // m
+selectCodeEditor("CalculatorSource.v", 187, 577); // be
+selectCodeEditor("CalculatorSource.v", 189, 561); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:29:24 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:29:24 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 3); // m
+// Elapsed time: 31 seconds
+selectCodeEditor("CalculatorCalculation.v", 120, 293); // be
+selectCodeEditor("CalculatorCalculation.v", 938, 327); // be
+selectCodeEditor("CalculatorCalculation.v", 913, 288); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("CalculatorCalculation.v", 839, 340); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("CalculatorCalculation.v", 865, 353); // be
+selectCodeEditor("CalculatorCalculation.v", 725, 278); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 38 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_WRITE_CONFIG_MEMORY_FILE, "Generate Memory Configuration File"); // a
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 92 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectCodeEditor("Subtractor_16_with_negatives.v", 199, 288); // be
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), add_one : Adder_16 (Adder_16.v)]", 15, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), add_one : Adder_16 (Adder_16.v), add_bit4to7 : Adder_4 (Adder_4.v)]", 17, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+dismissDialog("Opening Editor"); // bA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorStageSelector : CalculatorStageSelector (CalculatorStageSelector.v)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorStageSelector : CalculatorStageSelector (CalculatorStageSelector.v)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v), get_answer_segs : AnswerDecoder (AnswerDecoder.v)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v), get_answer_segs : AnswerDecoder (AnswerDecoder.v)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+dismissDialog("Opening Editor"); // bA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 2); // m
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 3); // m
+selectCodeEditor("CalculatorCalculation.v", 326, 611); // be
+selectCodeEditor("CalculatorCalculation.v", 317, 639); // be
+selectCodeEditor("CalculatorCalculation.v", 309, 632); // be
+selectCodeEditor("CalculatorCalculation.v", 298, 579); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 2); // m
+selectCodeEditor("Subtractor_16_with_negatives.v", 56, 352); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 56, 334); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 56, 334, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 36, 193); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 36, 193, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 67, 268); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 314, 531); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 275, 532); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 332, 356); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 483, 341); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 391, 498); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 396, 533); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 107, 234); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 341, 280); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 338, 395); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 341, 390); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 520, 270); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 369, 365); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 271, 354); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 364, 465); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 405, 495); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 375, 492); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 621, 459); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 516, 469); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 628, 553); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 737, 497); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 462, 604); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:38:35 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:38:35 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 1); // m
+selectCodeEditor("CalculatorSource.v", 545, 236); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("CalculatorSource.v", 699, 313); // be
+selectCodeEditor("CalculatorSource.v", 366, 583); // be
+selectCodeEditor("CalculatorSource.v", 430, 660); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 12 seconds
+selectCodeEditor("CalculatorSource.v", 230, 686); // be
+selectCodeEditor("CalculatorSource.v", 230, 686, false, false, false, false, true); // be - Double Click
+selectCodeEditor("CalculatorSource.v", 544, 186); // be
+selectCodeEditor("CalculatorSource.v", 240, 668); // be
+selectCodeEditor("CalculatorSource.v", 240, 668, false, false, false, false, true); // be - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("CalculatorSource.v", 640, 602); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("CalculatorSource.v", 419, 662); // be
+selectCodeEditor("CalculatorSource.v", 915, 653); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 173 MB (+1236kb) [00:28:26]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 172 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 75, 367); // be
+// Elapsed time: 80 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 312, 262); // be
+// Elapsed time: 45 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 413, 406); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 439, 393); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 191, 264); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 196, 262); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 507, 281); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 201, 266); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 447, 263); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 219, 269); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 209, 289); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 443, 284); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 642, 383); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:47:22 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:47:22 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 94 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 89 seconds
+selectCodeEditor("CalculatorSource.v", 1158, 415); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+// Elapsed time: 24 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 805, 307); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 282, 399); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 290, 399); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 298, 408); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 298, 408, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 526, 321); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 848, 458); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 718, 305); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 818, 366); // be
+// Elapsed time: 24 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 764, 443); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 206, 352); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 115, 377); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 327, 367); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 47, 243); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 47, 243, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 43, 198); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 43, 198, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 29, 253); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 40, 247); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 40, 247, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 18, 322); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 57, 435); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 23, 422); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 41, 424); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 65, 221); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 393, 337); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 393, 337, false, false, false, false, true); // be - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Subtractor_16_with_negatives.v", 228, 282); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 225, 269); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 226, 264); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 226, 257); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 224, 252); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 309, 292); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 421, 393); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 422, 393, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 177, 522); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 812, 519); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 34, 470); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 815, 514); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 26, 221); // be
+typeControlKey((HResource) null, "Subtractor_16_with_negatives.v", 'v'); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 285, 244); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 474, 241); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 374, 272); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 612, 254); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 718, 238); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 625, 408); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 736, 264); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 651, 362); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 552, 290); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 802, 272); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 184, 592); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 449, 587); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 561, 264); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 413, 326); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 59, 285); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 667, 414); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Subtractor_16_with_negatives.v", 495, 427); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 522, 370); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 384, 364); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 384, 364, false, false, false, false, true); // be - Double Click
+selectCodeEditor("Subtractor_16_with_negatives.v", 241, 327); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Subtractor_16_with_negatives.v", 471, 443); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 20:54:25 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 20:54:25 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 104 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v), get_answer_segs : AnswerDecoder (AnswerDecoder.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v), get_answer_segs : AnswerDecoder (AnswerDecoder.v)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v), get_answer_segs : AnswerDecoder (AnswerDecoder.v)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorSevenSegDisplay : CalculatorSevenSegDisplay (CalculatorSevenSegDisplay.v)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v)]", 5); // D
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), add_one : Adder_16 (Adder_16.v)]", 15); // D
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 2); // m
+selectCodeEditor("Subtractor_16_with_negatives.v", 257, 374); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 180, 563); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,582 MB. GUI used memory: 110 MB. Current time: 11/30/22, 8:58:49 PM EST
+selectCodeEditor("Subtractor_16_with_negatives.v", 503, 370); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), sub_bit12to15 : Subtractor_4 (Subtractor_4.v)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), sub_bit12to15 : Subtractor_4 (Subtractor_4.v), sub_bit1 : bitSubtractor (bitsubtractor.v)]", 14, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1052 ms.
+dismissDialog("Opening Editor"); // bA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), invert7to0 : not_8 (not_8.v)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CalculatorSource (CalculatorSource.v), CalculatorCalculation : CalculatorCalculation (CalculatorCalculation.v), subtract : Subtractor_16_with_negatives (Subtractor_16_with_negatives.v), invert7to0 : not_8 (not_8.v)]", 17, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 2); // m
+// Elapsed time: 14 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 316, 266); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 244, 182); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 171, 167); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 595, 439); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 520, 207); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 21:00:43 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 21:00:43 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 145 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 169 seconds
+selectCodeEditor("Subtractor_16_with_negatives.v", 112, 566); // be
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectCodeEditor("CalculatorSource.v", 364, 439); // be
+selectCodeEditor("CalculatorSource.v", 566, 337); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectCodeEditor("Subtractor_16_with_negatives.v", 307, 102); // be
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "not_8.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 21:08:49 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 21:08:49 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "not_8.v", 3); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "not_8.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorCalculation.v", 2); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Subtractor_16_with_negatives.v", 1); // m
+selectCodeEditor("Subtractor_16_with_negatives.v", 296, 488); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 362, 298); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 570, 324); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 480, 266); // be
+selectCodeEditor("Subtractor_16_with_negatives.v", 473, 303); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Subtractor_16_with_negatives.v", 570, 416); // be
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CalculatorSource.v", 0); // m
+selectCodeEditor("CalculatorSource.v", 161, 642); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("CalculatorSource.v", 437, 525); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.srcs/utils_1/imports/synth_1/AnswerSelector_FullTestSource.dcp with file C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/CalculatorSource.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 20 
+// Tcl Message: [Wed Nov 30 21:12:26 2022] Launched synth_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/synth_1/runme.log [Wed Nov 30 21:12:26 2022] Launched impl_1... Run output will be captured here: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 99 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "Programmed", 1, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.runs/impl_1/CalculatorSource.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bA
