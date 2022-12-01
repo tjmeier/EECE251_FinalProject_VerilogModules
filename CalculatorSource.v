@@ -3,16 +3,18 @@
 module CalculatorSource (
     input btnU, btnD, btnC, btnL, btnR, clk,
     input [15:0] sw,
-    output [15:0]led,
+    output [15:0] led,
     output [6:0]seg, [3:0]an
     );
     
-    wire display_sw, display_op, display_answer, is_negative_answer;
-    wire [15:0]num1, num2;
-    wire[2:0]opcode;
-    wire store_num1, store_num2, store_opcode;
-    
     wire [31:0] answer;
+    wire [15:0]num1, num2;
+    wire [2:0]opcode, opcodeNOT;
+    not_8 (opcodeNOT, opcode);
+    
+    wire store_num1, store_num2, store_opcode;
+    wire display_sw, display_op, display_answer, is_negative_answer;  
+
     
     
     CalculatorSevenSegDisplay (
@@ -72,6 +74,7 @@ module CalculatorSource (
     assign led[15] = store_num1;
     assign led[14] = store_num2;
     assign led[13] = store_opcode;
-    and (led[10], is_negative_answer, display_answer); //shows negative state when the answer is being shown
+    and (led[10], is_negative_answer, display_answer, opcodeNOT[0], opcode[1], opcodeNOT[2]);
+    //shows negative state when the answer is being shown
     
 endmodule
