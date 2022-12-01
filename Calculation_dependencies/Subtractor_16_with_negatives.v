@@ -12,7 +12,7 @@ wire [15:0] Positive_Diff16, Positive_Diff16NOT, Negative_Diff16;
 //when the overall difference is negative, the 2s compliment needs to be taken on
 //Positive_Diff16 in order to derivce Negative_Diff16.
 
-wire [4:0] Carry;
+wire [3:0] Carry;
 
 wire Is_negative;
 assign Is_negative_out = Is_negative;
@@ -60,14 +60,13 @@ Subtractor_4 sub_bit12to15 (
 
 //First Step, flipping all bits
 
+not_8 invert7to0 (Positive_Diff16NOT[7:0], Positive_Diff16[7:0]);
+not_8 invert15to8 (Positive_Diff16NOT[15:8], Positive_Diff16[15:8]);
 
-not_8 invert7to0 (Positive_Diff16[7:0], Positive_Diff16NOT[7:0]);
-not_8 invert15to8 (Positive_Diff16[15:8], Positive_Diff16NOT[15:8]);
-
-//Second Step, adding 1 to the inverted value
+//Second Step, adding 1 to that value
 Adder_16 add_one (
-	.A_in( Positive_Diff16NOT ),
-	.B_in( 16'b00000000_00000001 ),
+	.A_in16( Positive_Diff16NOT ),
+	.B_in16( 16'b00000000_00000001 ),
 	.Carry_in( 1'b0 ),
 
 	.Sum_out16( Negative_Diff16 )
@@ -76,13 +75,13 @@ Adder_16 add_one (
 /////////////////////////////////////////////////////////////////////
 // Choosing to output the Positive_Diff16 or the Negative_Diff16 ////
 
-mux4b #(16)
+mux4b #(16) choose_difference_to_output
 (
 	.in1(Negative_Diff16),
 	.in0(Positive_Diff16),
 	.sel( Is_negative ),
 
-	.out( Diff_out )
+	.out( Diff_out16 )
 );
 
 endmodule
