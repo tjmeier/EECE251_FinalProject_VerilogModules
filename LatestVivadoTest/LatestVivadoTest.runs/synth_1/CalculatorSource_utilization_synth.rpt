@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed Nov 30 21:13:14 2022
+| Date         : Thu Dec  1 10:51:57 2022
 | Host         : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CalculatorSource_utilization_synth.rpt -pb CalculatorSource_utilization_synth.pb
 | Design       : CalculatorSource
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  684 |     0 |          0 |     20800 |  3.29 |
-|   LUT as Logic          |  684 |     0 |          0 |     20800 |  3.29 |
+| Slice LUTs*             |  685 |     0 |          0 |     20800 |  3.29 |
+|   LUT as Logic          |  685 |     0 |          0 |     20800 |  3.29 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         |  154 |     0 |          0 |     41600 |  0.37 |
 |   Register as Flip Flop |  154 |     0 |          0 |     41600 |  0.37 |
@@ -150,10 +150,10 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  347 |                 LUT |
+| LUT6     |  348 |                 LUT |
 | LUT5     |  231 |                 LUT |
 | FDRE     |  154 |        Flop & Latch |
-| LUT3     |   97 |                 LUT |
+| LUT3     |   96 |                 LUT |
 | LUT2     |   65 |                 LUT |
 | LUT4     |   45 |                 LUT |
 | OBUF     |   23 |                  IO |
