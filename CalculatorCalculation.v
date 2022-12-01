@@ -44,7 +44,7 @@ IN_operation_code
 1                    0                  0                     01        multiply
 0                    1                  0                     10        subtract
 0                    0                  1                     11        add
-the IN_show inputs will never be in any other arrangement than these 4 above
+the IN_operation inputs will never be in any other arrangement than these 4 above unless user makes mistake
 */
 
 wire [1:0] mux_code;
