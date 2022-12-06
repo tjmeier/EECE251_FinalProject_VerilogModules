@@ -10,14 +10,14 @@ module CalculatorSource (
     wire [31:0] answer;
     wire [15:0]num1, num2;
     wire [2:0]opcode, opcodeNOT;
-    not_8 (opcodeNOT, opcode);
+    not_8 inverter (opcodeNOT, opcode);
     
     wire store_num1, store_num2, store_opcode;
     wire display_sw, display_op, display_answer, is_negative_answer;  
 
     
     
-    CalculatorSevenSegDisplay (
+    CalculatorSevenSegDisplay Seven_Segment_Display (
         .IN_switches( sw ),
         .IN_operation_code( sw[2:0] ),
         .IN_answer( answer ),
@@ -36,7 +36,7 @@ module CalculatorSource (
         .OUT_anode( an )
     );
     
-    CalculatorStageSelector (
+    CalculatorStageSelector Stage_Selector (
         .previous_stage_button(btnL),
         .next_stage_button(btnR),
         .clk(clk),
@@ -49,7 +49,7 @@ module CalculatorSource (
         .display_32bit_answer( display_answer )
     );
     
-    CalculatorDataCollector (
+    CalculatorDataCollector Data_Collector (
         .IN_switches( sw ),
         .IN_operation_code( sw[2:0] ),
         .IN_store_num1(store_num1),
@@ -61,7 +61,7 @@ module CalculatorSource (
         .OUT_operation_code(opcode)
     );
     
-    CalculatorCalculation (
+    CalculatorCalculation Calculation (
         .IN_num1( num1 ),
         .IN_num2( num2 ),
         .IN_operation_code( opcode ),
