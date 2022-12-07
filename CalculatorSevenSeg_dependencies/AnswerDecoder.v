@@ -26,7 +26,7 @@ module AnswerDecoder(
     wire [2:0] answer_select_code; //wire used to take the answer_select_code from the getCode module
     //and deliver it to the LEDvisualizer and the 4digitsToOutput
     
-    AnswerSelector_getCode (
+    AnswerSelector_getCode Get_Code_for_4_Selected_Answer_Digits (
         .clk ( IN_clk ),
         .up_button( IN_up_button ),
         .down_button( IN_down_button ),
@@ -34,14 +34,14 @@ module AnswerDecoder(
         .out_answer_select_code( answer_select_code )
     );
     
-    AnswerSelector_LEDvisualizer (
+    AnswerSelector_LEDvisualizer Show_which_4_Answer_Digits_are_Selected_on_LEDS (
         .in_answer_select_code( answer_select_code ),
         .out_LED( OUT_Led_Visualizer )
     );
 
 
 
-    AnswerSelector_4digitsToOutput(
+    AnswerSelector_4digitsToOutput Take_8_Answer_Digits_and_Use_Code_to_Select_4_Digits (
         hex0, hex1, hex2, hex3, hex4, hex5, hex6, hex7, //takes in the 8 hex digits
         answer_select_code, //takes in the answer_select_code
         OUT_AnswerDigit0, OUT_AnswerDigit1, OUT_AnswerDigit2, OUT_AnswerDigit3

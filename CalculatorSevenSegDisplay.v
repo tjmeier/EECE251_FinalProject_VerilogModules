@@ -47,7 +47,7 @@ module CalculatorSevenSegDisplay(
     wire [6:0] answer_hex0, answer_hex1, answer_hex2, answer_hex3;
     wire [7:0] Led_Visualizer_answer;
     
-    AnswerDecoder get_answer_segs(
+    AnswerDecoder Answer_Decoder(
         .IN_binary_answer( IN_answer ),
         .IN_up_button( IN_up_button ),
         .IN_down_button( IN_down_button ),
