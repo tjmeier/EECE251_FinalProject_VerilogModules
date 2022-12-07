@@ -71,9 +71,11 @@ module CalculatorSource (
     );
     
     //led indicators for stage
-    assign led[15] = store_num1;
-    assign led[14] = store_num2;
-    assign led[13] = store_opcode;
+    assign led[15] = 1'b1;
+    assign led[14] = store_num1;
+    assign led[13] = store_num2;
+    assign led[12] = store_opcode;
+    
     and (led[10], is_negative_answer, display_answer, opcodeNOT[0], opcode[1], opcodeNOT[2]);
     //shows negative state when the answer is being shown
     

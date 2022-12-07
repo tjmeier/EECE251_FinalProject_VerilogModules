@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Dec  1 10:51:57 2022
+| Date         : Tue Dec  6 21:25:13 2022
 | Host         : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CalculatorSource_utilization_synth.rpt -pb CalculatorSource_utilization_synth.pb
 | Design       : CalculatorSource
@@ -156,12 +156,12 @@ Table of Contents
 | LUT3     |   96 |                 LUT |
 | LUT2     |   65 |                 LUT |
 | LUT4     |   45 |                 LUT |
-| OBUF     |   23 |                  IO |
+| OBUF     |   24 |                  IO |
 | IBUF     |   22 |                  IO |
 | CARRY4   |   20 |          CarryLogic |
 | LUT1     |   11 |                 LUT |
-| OBUFT    |    4 |                  IO |
 | MUXF7    |    4 |               MuxFx |
+| OBUFT    |    3 |                  IO |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 

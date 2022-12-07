@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Dec  1 10:52:31 2022
+| Date         : Tue Dec  6 21:25:40 2022
 | Host         : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command      : report_drc -file CalculatorSource_drc_opted.rpt -pb CalculatorSource_drc_opted.pb -rpx CalculatorSource_drc_opted.rpx
 | Design       : CalculatorSource
@@ -35,29 +35,29 @@ Table of Contents
 -----------------
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT nolabel_line39/U3/led_OBUF[13]_inst_i_1 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
-nolabel_line52/opcode0/data_out_reg, nolabel_line52/opcode1/data_out_reg
-nolabel_line52/opcode2/data_out_reg
+A LUT Stage_Selector/U3/led_OBUF[12]_inst_i_1 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
+Data_Collector/opcode0/data_out_reg, Data_Collector/opcode1/data_out_reg
+Data_Collector/opcode2/data_out_reg
 Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT nolabel_line39/U3/led_OBUF[15]_inst_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
-nolabel_line52/num1/bit0/data_out_reg,
-nolabel_line52/num1/bit1/data_out_reg,
-nolabel_line52/num1/bit10/data_out_reg,
-nolabel_line52/num1/bit11/data_out_reg,
-nolabel_line52/num1/bit12/data_out_reg,
-nolabel_line52/num1/bit13/data_out_reg,
-nolabel_line52/num1/bit14/data_out_reg,
-nolabel_line52/num1/bit15/data_out_reg,
-nolabel_line52/num1/bit2/data_out_reg,
-nolabel_line52/num1/bit3/data_out_reg,
-nolabel_line52/num1/bit4/data_out_reg,
-nolabel_line52/num1/bit5/data_out_reg,
-nolabel_line52/num1/bit6/data_out_reg,
-nolabel_line52/num1/bit7/data_out_reg,
-nolabel_line52/num1/bit8/data_out_reg (the first 15 of 16 listed)
+A LUT Stage_Selector/U3/led_OBUF[14]_inst_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+Data_Collector/num1/bit0/data_out_reg,
+Data_Collector/num1/bit1/data_out_reg,
+Data_Collector/num1/bit10/data_out_reg,
+Data_Collector/num1/bit11/data_out_reg,
+Data_Collector/num1/bit12/data_out_reg,
+Data_Collector/num1/bit13/data_out_reg,
+Data_Collector/num1/bit14/data_out_reg,
+Data_Collector/num1/bit15/data_out_reg,
+Data_Collector/num1/bit2/data_out_reg,
+Data_Collector/num1/bit3/data_out_reg,
+Data_Collector/num1/bit4/data_out_reg,
+Data_Collector/num1/bit5/data_out_reg,
+Data_Collector/num1/bit6/data_out_reg,
+Data_Collector/num1/bit7/data_out_reg,
+Data_Collector/num1/bit8/data_out_reg (the first 15 of 16 listed)
 Related violations: <none>
 
 

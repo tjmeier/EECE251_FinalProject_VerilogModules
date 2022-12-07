@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Thu Dec  1 10:52:55 2022
+| Date             : Tue Dec  6 21:26:04 2022
 | Host             : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command          : report_power -file CalculatorSource_power_routed.rpt -pb CalculatorSource_power_summary_routed.pb -rpx CalculatorSource_power_routed.rpx
 | Design           : CalculatorSource
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.038        |
@@ -54,7 +54,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
 | Slice Logic    |     0.008 |     1105 |       --- |             --- |
-|   LUT as Logic |     0.008 |      654 |     20800 |            3.14 |
+|   LUT as Logic |     0.008 |      655 |     20800 |            3.15 |
 |   Register     |    <0.001 |      154 |     41600 |            0.37 |
 |   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
 |   F7/F8 Muxes  |    <0.001 |        4 |     32600 |            0.01 |
@@ -63,7 +63,7 @@ Table of Contents
 | Signals        |     0.006 |      946 |       --- |             --- |
 | I/O            |     0.022 |       49 |       106 |           46.23 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -139,22 +139,22 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------+-----------+
-| Name                 | Power (W) |
-+----------------------+-----------+
-| CalculatorSource     |     0.038 |
-|   nolabel_line20     |     0.002 |
-|     get_answer_segs  |     0.001 |
-|       nolabel_line29 |     0.001 |
-|   nolabel_line39     |     0.002 |
-|     U3               |     0.001 |
-|   nolabel_line52     |     0.012 |
-|     num1             |     0.009 |
-|       bit11          |     0.001 |
-|       bit15          |     0.002 |
-|       bit3           |     0.002 |
-|       bit7           |     0.003 |
-|     num2             |     0.003 |
-+----------------------+-----------+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| CalculatorSource        |     0.038 |
+|   Data_Collector        |     0.012 |
+|     num1                |     0.009 |
+|       bit11             |     0.001 |
+|       bit15             |     0.002 |
+|       bit3              |     0.002 |
+|       bit7              |     0.003 |
+|     num2                |     0.003 |
+|   Seven_Segment_Display |     0.002 |
+|     get_answer_segs     |     0.001 |
+|       nolabel_line29    |     0.001 |
+|   Stage_Selector        |     0.002 |
+|     U3                  |     0.001 |
++-------------------------+-----------+
 
 
