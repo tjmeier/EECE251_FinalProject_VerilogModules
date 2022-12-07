@@ -10,7 +10,7 @@ module CalculatorSource (
     wire [31:0] answer;
     wire [15:0]num1, num2;
     wire [2:0]opcode, opcodeNOT;
-    not_8 inverter (opcodeNOT, opcode);
+
     
     wire store_num1, store_num2, store_opcode;
     wire display_sw, display_op, display_answer, is_negative_answer;  
@@ -76,7 +76,7 @@ module CalculatorSource (
     assign led[13] = store_num2;
     assign led[12] = store_opcode;
     
-    and (led[10], is_negative_answer, display_answer, opcodeNOT[0], opcode[1], opcodeNOT[2]);
+    and (led[10], is_negative_answer, display_answer);
     //shows negative state when the answer is being shown
     
 endmodule

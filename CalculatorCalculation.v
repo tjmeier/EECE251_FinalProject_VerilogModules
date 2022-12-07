@@ -10,6 +10,8 @@ module CalculatorCalculation
 
 wire [31:0] addition_answer, subtraction_answer, multiplication_answer;
 
+
+
 Multiplier_16 multiply (
     .A_in16( IN_num1 ),
     .B_in16( IN_num2 ),
@@ -29,9 +31,18 @@ Subtractor_16_with_negatives subtract (
     .B_in16( IN_num2 ),
     .Carry_in( 1'b0 ),
     .Diff_out16( subtraction_answer ),
-    .Is_negative_out( OUT_is_negative )
+    .Is_negative_out( subtraction_answer_is_negative )
 );
 
+//Get OUT_is_negative
+wire subtraction_answer_is_negative;
+wire [2:0]operation_codeNOT;
+not (operation_codeNOT[0], IN_operation_code[0]);
+not (operation_codeNOT[1], IN_operation_code[1]);
+not (operation_codeNOT[2], IN_operation_code[2]);
+and (OUT_is_negative, subtraction_answer_is_negative,
+operation_codeNOT[0], IN_operation_code[1], operation_codeNOT[2]);
+//the answer is only negative if the operation is subtraction, and the subtraction answer is negative
 
 
 ///////////////////
