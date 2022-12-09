@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Dec  9 16:15:03 2022
-# Process ID: 15300
+# Start of session at: Fri Dec  9 16:05:15 2022
+# Process ID: 9396
 # Current directory: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2544 C:\Users\tyler\Documents\GitHub\EECE251_FinalProject_VerilogModules\LatestVivadoTest\LatestVivadoTest.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17736 C:\Users\tyler\Documents\GitHub\EECE251_FinalProject_VerilogModules\LatestVivadoTest\LatestVivadoTest.xpr
 # Log file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/vivado.log
 # Journal file: C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest\vivado.jou
 # Running On: Tyler_Thinkpad, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 14, Host memory: 16830 MB
@@ -13,6 +13,3 @@
 start_gui
 open_project C:/Users/tyler/Documents/GitHub/EECE251_FinalProject_VerilogModules/LatestVivadoTest/LatestVivadoTest.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 20
-wait_on_run impl_1
