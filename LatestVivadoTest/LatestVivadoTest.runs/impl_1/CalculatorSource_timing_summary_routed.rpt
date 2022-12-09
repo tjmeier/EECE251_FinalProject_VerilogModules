@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Tue Dec  6 22:59:53 2022
+| Date         : Fri Dec  9 16:01:20 2022
 | Host         : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file CalculatorSource_timing_summary_routed.rpt -pb CalculatorSource_timing_summary_routed.pb -rpx CalculatorSource_timing_summary_routed.rpx -warn_on_violation
 | Design       : CalculatorSource
@@ -353,9 +353,9 @@ Slack (MET) :             5.568ns  (required time - arrival time)
                          slack                                  5.568    
 
 Slack (MET) :             5.675ns  (required time - arrival time)
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
@@ -381,20 +381,20 @@ Slack (MET) :             5.675ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/clk_IBUF_BUFG
-    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/clk_IBUF_BUFG
+    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/Q
-                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]
-    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0/O
-                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0_n_0
-    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/data_out_i_3__1/O
-                         net (fo=4, routed)           0.990     8.727    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/down_pulse
-    SLICE_X30Y54         LUT2 (Prop_lut2_I0_O)        0.156     8.883 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/data_out_i_3__0/O
-                         net (fo=1, routed)           0.164     9.047    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/data_out_reg_0
-    SLICE_X30Y54         LUT6 (Prop_lut6_I3_O)        0.355     9.402 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/data_out_i_1/O
-                         net (fo=1, routed)           0.000     9.402    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/next_code_2
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/D
+    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/Q
+                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]
+    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0/O
+                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0_n_0
+    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/data_out_i_3__1/O
+                         net (fo=4, routed)           0.990     8.727    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/down_pulse
+    SLICE_X30Y54         LUT2 (Prop_lut2_I0_O)        0.156     8.883 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/data_out_i_3__0/O
+                         net (fo=1, routed)           0.164     9.047    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/data_out_reg_0
+    SLICE_X30Y54         LUT6 (Prop_lut6_I3_O)        0.355     9.402 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/data_out_i_1/O
+                         net (fo=1, routed)           0.000     9.402    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/next_code_2
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -404,11 +404,11 @@ Slack (MET) :             5.675ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
+                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
                          clock pessimism              0.258    15.034    
                          clock uncertainty           -0.035    14.999    
-    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.079    15.078    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg
+    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.079    15.078    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg
   -------------------------------------------------------------------
                          required time                         15.078    
                          arrival time                          -9.402    
@@ -416,9 +416,9 @@ Slack (MET) :             5.675ns  (required time - arrival time)
                          slack                                  5.675    
 
 Slack (MET) :             6.399ns  (required time - arrival time)
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
@@ -444,18 +444,18 @@ Slack (MET) :             6.399ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/clk_IBUF_BUFG
-    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/clk_IBUF_BUFG
+    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/Q
-                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]
-    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0/O
-                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0_n_0
-    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/data_out_i_3__1/O
-                         net (fo=4, routed)           0.820     8.557    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/down_pulse
-    SLICE_X30Y54         LUT6 (Prop_lut6_I2_O)        0.124     8.681 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_i_1__20/O
-                         net (fo=1, routed)           0.000     8.681    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg_1
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/D
+    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/Q
+                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]
+    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0/O
+                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0_n_0
+    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/data_out_i_3__1/O
+                         net (fo=4, routed)           0.820     8.557    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/down_pulse
+    SLICE_X30Y54         LUT6 (Prop_lut6_I2_O)        0.124     8.681 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_i_1__20/O
+                         net (fo=1, routed)           0.000     8.681    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg_1
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -465,11 +465,11 @@ Slack (MET) :             6.399ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
+                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
                          clock pessimism              0.258    15.034    
                          clock uncertainty           -0.035    14.999    
-    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.081    15.080    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg
+    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.081    15.080    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg
   -------------------------------------------------------------------
                          required time                         15.080    
                          arrival time                          -8.681    
@@ -540,9 +540,9 @@ Slack (MET) :             6.564ns  (required time - arrival time)
                          slack                                  6.564    
 
 Slack (MET) :             6.639ns  (required time - arrival time)
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
@@ -568,18 +568,18 @@ Slack (MET) :             6.639ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/clk_IBUF_BUFG
-    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/C
+                         net (fo=119, routed)         1.554     5.075    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/clk_IBUF_BUFG
+    SLICE_X29Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]/Q
-                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_cnt_reg[13]
-    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0/O
-                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_state_i_3__0_n_0
-    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/data_out_i_3__1/O
-                         net (fo=4, routed)           0.576     8.313    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/down_pulse
-    SLICE_X30Y54         LUT6 (Prop_lut6_I3_O)        0.124     8.437 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_i_1__19/O
-                         net (fo=1, routed)           0.000     8.437    Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg_1
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/D
+    SLICE_X29Y53         FDRE (Prop_fdre_C_Q)         0.456     5.531 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]/Q
+                         net (fo=2, routed)           1.229     6.760    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_cnt_reg[13]
+    SLICE_X29Y54         LUT4 (Prop_lut4_I0_O)        0.124     6.884 f  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0/O
+                         net (fo=2, routed)           0.729     7.613    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_state_i_3__0_n_0
+    SLICE_X30Y51         LUT6 (Prop_lut6_I1_O)        0.124     7.737 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/data_out_i_3__1/O
+                         net (fo=4, routed)           0.576     8.313    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/down_pulse
+    SLICE_X30Y54         LUT6 (Prop_lut6_I3_O)        0.124     8.437 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_i_1__19/O
+                         net (fo=1, routed)           0.000     8.437    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg_1
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -589,11 +589,11 @@ Slack (MET) :             6.639ns  (required time - arrival time)
     W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862    13.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
+                         net (fo=119, routed)         1.435    14.776    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
                          clock pessimism              0.258    15.034    
                          clock uncertainty           -0.035    14.999    
-    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.077    15.076    Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg
+    SLICE_X30Y54         FDRE (Setup_fdre_C_D)        0.077    15.076    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg
   -------------------------------------------------------------------
                          required time                         15.076    
                          arrival time                          -8.437    
@@ -1410,35 +1410,35 @@ Sources:            { clk }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
 Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1  clk_IBUF_BUFG_inst/I
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y53   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[0]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[10]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[11]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[12]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[13]/C
-Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[14]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[0]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[0]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[10]/C
-Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[10]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/data_out_reg/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[0]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[0]/C
-High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[10]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_cnt_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y53   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X28Y56   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[14]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/data_out_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X30Y54   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y53   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X28Y55   Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_cnt_reg[10]/C
 
 
 
@@ -2179,7 +2179,7 @@ Min Delay            23 Endpoints
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            seg[4]
                             (output port)
@@ -2202,10 +2202,10 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
+                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 f  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/Q
+    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 f  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/Q
                          net (fo=46, routed)          1.598     7.189    Data_Collector/opcode2/answer_select_code[1]
     SLICE_X36Y58         LUT6 (Prop_lut6_I4_O)        0.124     7.313 r  Data_Collector/opcode2/seg_OBUF[4]_inst_i_21/O
                          net (fo=1, routed)           0.965     8.278    Data_Collector/num2/bit5/seg_OBUF[4]_inst_i_3
@@ -2461,7 +2461,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            led[6]
                             (output port)
@@ -2484,12 +2484,12 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/C
+                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/data_out_reg/Q
-                         net (fo=46, routed)          1.263     6.855    Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/led[6]_0
-    SLICE_X30Y44         LUT5 (Prop_lut5_I2_O)        0.148     7.003 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code0/led_OBUF[6]_inst_i_1/O
+    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/data_out_reg/Q
+                         net (fo=46, routed)          1.263     6.855    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/led[6]_0
+    SLICE_X30Y44         LUT5 (Prop_lut5_I2_O)        0.148     7.003 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code0/led_OBUF[6]_inst_i_1/O
                          net (fo=1, routed)           3.884    10.887    led_OBUF[6]
     U14                  OBUF (Prop_obuf_I_O)         3.710    14.597 r  led_OBUF[6]_inst/O
                          net (fo=0)                   0.000    14.597    led[6]
@@ -2533,7 +2533,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
+  Source:                 Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            led[5]
                             (output port)
@@ -2556,12 +2556,12 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.967     3.425    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/clk_IBUF_BUFG
-    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/C
+                         net (fo=119, routed)         1.553     5.074    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/clk_IBUF_BUFG
+    SLICE_X30Y54         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg/Q
-                         net (fo=46, routed)          1.444     7.035    Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/data_out_reg_0
-    SLICE_X30Y44         LUT4 (Prop_lut4_I0_O)        0.124     7.159 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code1/led_OBUF[5]_inst_i_1/O
+    SLICE_X30Y54         FDRE (Prop_fdre_C_Q)         0.518     5.592 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg/Q
+                         net (fo=46, routed)          1.444     7.035    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/data_out_reg_0
+    SLICE_X30Y44         LUT4 (Prop_lut4_I0_O)        0.124     7.159 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code1/led_OBUF[5]_inst_i_1/O
                          net (fo=1, routed)           3.744    10.904    led_OBUF[5]
     U15                  OBUF (Prop_obuf_I_O)         3.514    14.418 r  led_OBUF[5]_inst/O
                          net (fo=0)                   0.000    14.418    led[5]
@@ -2890,8 +2890,8 @@ Slack:                    inf
     SLICE_X36Y49         FDRE                                         r  Stage_Selector/U4/data_out_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X36Y49         FDRE (Prop_fdre_C_Q)         0.141     1.588 r  Stage_Selector/U4/data_out_reg/Q
-                         net (fo=25, routed)          0.450     2.038    Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/X4
-    SLICE_X30Y44         LUT5 (Prop_lut5_I3_O)        0.047     2.085 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/code2/led_OBUF[2]_inst_i_1/O
+                         net (fo=25, routed)          0.450     2.038    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/X4
+    SLICE_X30Y44         LUT5 (Prop_lut5_I3_O)        0.047     2.085 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/code2/led_OBUF[2]_inst_i_1/O
                          net (fo=1, routed)           0.957     3.043    led_OBUF[2]
     U19                  OBUF (Prop_obuf_I_O)         1.275     4.318 r  led_OBUF[2]_inst/O
                          net (fo=0)                   0.000     4.318    led[2]
@@ -2953,7 +2953,7 @@ Max Delay Paths
 Slack:                    inf
   Source:                 btnC
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -2974,10 +2974,10 @@ Slack:                    inf
     U18                                               0.000     0.000 f  btnC (IN)
                          net (fo=0)                   0.000     0.000    btnC
     U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 f  btnC_IBUF_inst/O
-                         net (fo=1, routed)           3.086     4.527    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/btnC_IBUF
-    SLICE_X30Y53         LUT1 (Prop_lut1_I0_O)        0.124     4.651 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_i_1__1/O
-                         net (fo=1, routed)           0.000     4.651    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_i_1__1_n_0
-    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/D
+                         net (fo=1, routed)           3.086     4.527    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/btnC_IBUF
+    SLICE_X30Y53         LUT1 (Prop_lut1_I0_O)        0.124     4.651 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_i_1__1/O
+                         net (fo=1, routed)           0.000     4.651    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_i_1__1_n_0
+    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -2987,13 +2987,13 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.435     4.776    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/clk_IBUF_BUFG
-    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/C
+                         net (fo=119, routed)         1.435     4.776    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/clk_IBUF_BUFG
+    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/C
 
 Slack:                    inf
   Source:                 btnU
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -3014,10 +3014,10 @@ Slack:                    inf
     T18                                               0.000     0.000 f  btnU (IN)
                          net (fo=0)                   0.000     0.000    btnU
     T18                  IBUF (Prop_ibuf_I_O)         1.454     1.454 f  btnU_IBUF_inst/O
-                         net (fo=1, routed)           3.053     4.507    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/btnU_IBUF
-    SLICE_X29Y56         LUT1 (Prop_lut1_I0_O)        0.124     4.631 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_i_1/O
-                         net (fo=1, routed)           0.000     4.631    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/p_0_in
-    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/D
+                         net (fo=1, routed)           3.053     4.507    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/btnU_IBUF
+    SLICE_X29Y56         LUT1 (Prop_lut1_I0_O)        0.124     4.631 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_i_1/O
+                         net (fo=1, routed)           0.000     4.631    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/p_0_in
+    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -3027,8 +3027,8 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.437     4.778    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/clk_IBUF_BUFG
-    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/C
+                         net (fo=119, routed)         1.437     4.778    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/clk_IBUF_BUFG
+    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/C
 
 Slack:                    inf
   Source:                 btnR
@@ -3113,7 +3113,7 @@ Slack:                    inf
 Slack:                    inf
   Source:                 btnD
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -3134,10 +3134,10 @@ Slack:                    inf
     U17                                               0.000     0.000 f  btnD (IN)
                          net (fo=0)                   0.000     0.000    btnD
     U17                  IBUF (Prop_ibuf_I_O)         1.452     1.452 f  btnD_IBUF_inst/O
-                         net (fo=1, routed)           2.686     4.139    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/btnD_IBUF
-    SLICE_X28Y50         LUT1 (Prop_lut1_I0_O)        0.124     4.263 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_i_1__0/O
-                         net (fo=1, routed)           0.000     4.263    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_i_1__0_n_0
-    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/D
+                         net (fo=1, routed)           2.686     4.139    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/btnD_IBUF
+    SLICE_X28Y50         LUT1 (Prop_lut1_I0_O)        0.124     4.263 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_i_1__0/O
+                         net (fo=1, routed)           0.000     4.263    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_i_1__0_n_0
+    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -3147,8 +3147,8 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         1.438     4.779    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/clk_IBUF_BUFG
-    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/C
+                         net (fo=119, routed)         1.438     4.779    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/clk_IBUF_BUFG
+    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/C
 
 
 
@@ -3159,7 +3159,7 @@ Min Delay Paths
 Slack:                    inf
   Source:                 btnD
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
@@ -3175,10 +3175,10 @@ Slack:                    inf
     U17                                               0.000     0.000 f  btnD (IN)
                          net (fo=0)                   0.000     0.000    btnD
     U17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 f  btnD_IBUF_inst/O
-                         net (fo=1, routed)           1.261     1.482    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/btnD_IBUF
-    SLICE_X28Y50         LUT1 (Prop_lut1_I0_O)        0.045     1.527 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_i_1__0/O
-                         net (fo=1, routed)           0.000     1.527    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_i_1__0_n_0
-    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/D
+                         net (fo=1, routed)           1.261     1.482    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/btnD_IBUF
+    SLICE_X28Y50         LUT1 (Prop_lut1_I0_O)        0.045     1.527 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_i_1__0/O
+                         net (fo=1, routed)           0.000     1.527    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_i_1__0_n_0
+    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -3188,8 +3188,8 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         0.832     1.959    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/clk_IBUF_BUFG
-    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer2/PB_sync_0_reg/C
+                         net (fo=119, routed)         0.832     1.959    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/clk_IBUF_BUFG
+    SLICE_X28Y50         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer2/PB_sync_0_reg/C
 
 Slack:                    inf
   Source:                 btnR
@@ -3264,7 +3264,7 @@ Slack:                    inf
 Slack:                    inf
   Source:                 btnU
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
@@ -3280,10 +3280,10 @@ Slack:                    inf
     T18                                               0.000     0.000 f  btnU (IN)
                          net (fo=0)                   0.000     0.000    btnU
     T18                  IBUF (Prop_ibuf_I_O)         0.222     0.222 f  btnU_IBUF_inst/O
-                         net (fo=1, routed)           1.362     1.584    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/btnU_IBUF
-    SLICE_X29Y56         LUT1 (Prop_lut1_I0_O)        0.045     1.629 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_i_1/O
-                         net (fo=1, routed)           0.000     1.629    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/p_0_in
-    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/D
+                         net (fo=1, routed)           1.362     1.584    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/btnU_IBUF
+    SLICE_X29Y56         LUT1 (Prop_lut1_I0_O)        0.045     1.629 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_i_1/O
+                         net (fo=1, routed)           0.000     1.629    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/p_0_in
+    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -3293,13 +3293,13 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         0.831     1.958    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/clk_IBUF_BUFG
-    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer1/PB_sync_0_reg/C
+                         net (fo=119, routed)         0.831     1.958    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/clk_IBUF_BUFG
+    SLICE_X29Y56         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer1/PB_sync_0_reg/C
 
 Slack:                    inf
   Source:                 btnC
                             (input port)
-  Destination:            Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/D
+  Destination:            Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Hold (Min at Fast Process Corner)
@@ -3315,10 +3315,10 @@ Slack:                    inf
     U18                                               0.000     0.000 f  btnC (IN)
                          net (fo=0)                   0.000     0.000    btnC
     U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 f  btnC_IBUF_inst/O
-                         net (fo=1, routed)           1.386     1.595    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/btnC_IBUF
-    SLICE_X30Y53         LUT1 (Prop_lut1_I0_O)        0.045     1.640 r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_i_1__1/O
-                         net (fo=1, routed)           0.000     1.640    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_i_1__1_n_0
-    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/D
+                         net (fo=1, routed)           1.386     1.595    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/btnC_IBUF
+    SLICE_X30Y53         LUT1 (Prop_lut1_I0_O)        0.045     1.640 r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_i_1__1/O
+                         net (fo=1, routed)           0.000     1.640    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_i_1__1_n_0
+    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -3328,8 +3328,8 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.685     1.099    clk_IBUF
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
-                         net (fo=119, routed)         0.829     1.957    Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/clk_IBUF_BUFG
-    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/get_answer_segs/nolabel_line29/debouncer3/PB_sync_0_reg/C
+                         net (fo=119, routed)         0.829     1.957    Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/clk_IBUF_BUFG
+    SLICE_X30Y53         FDRE                                         r  Seven_Segment_Display/Answer_Decoder/Get_Code_for_4_Selected_Answer_Digits/debouncer3/PB_sync_0_reg/C
 
 
 

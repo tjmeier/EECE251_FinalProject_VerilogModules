@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Tue Dec  6 22:59:53 2022
+| Date             : Fri Dec  9 16:01:20 2022
 | Host             : Tyler_Thinkpad running 64-bit major release  (build 9200)
 | Command          : report_power -file CalculatorSource_power_routed.rpt -pb CalculatorSource_power_summary_routed.pb -rpx CalculatorSource_power_routed.rpx
 | Design           : CalculatorSource
@@ -139,21 +139,21 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------------+-----------+
-| Name                    | Power (W) |
-+-------------------------+-----------+
-| CalculatorSource        |     0.038 |
-|   Data_Collector        |     0.012 |
-|     num1                |     0.009 |
-|       bit11             |     0.001 |
-|       bit15             |     0.002 |
-|       bit3              |     0.002 |
-|       bit7              |     0.003 |
-|     num2                |     0.003 |
-|   Seven_Segment_Display |     0.002 |
-|     get_answer_segs     |     0.001 |
-|       nolabel_line29    |     0.001 |
-|   Stage_Selector        |     0.002 |
-+-------------------------+-----------+
++---------------------------------------------+-----------+
+| Name                                        | Power (W) |
++---------------------------------------------+-----------+
+| CalculatorSource                            |     0.038 |
+|   Data_Collector                            |     0.012 |
+|     num1                                    |     0.009 |
+|       bit11                                 |     0.001 |
+|       bit15                                 |     0.002 |
+|       bit3                                  |     0.002 |
+|       bit7                                  |     0.003 |
+|     num2                                    |     0.003 |
+|   Seven_Segment_Display                     |     0.002 |
+|     Answer_Decoder                          |     0.001 |
+|       Get_Code_for_4_Selected_Answer_Digits |     0.001 |
+|   Stage_Selector                            |     0.002 |
++---------------------------------------------+-----------+
 
 
